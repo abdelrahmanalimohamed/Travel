@@ -1,5 +1,5 @@
 # Travel
-Implementing Clean Architecture with ASP.NET Core . 
+Implementing Clean Architecture with ASP.NET Core , EF Core and SQLLite . 
 
 <p align="center">
   <kbd>
