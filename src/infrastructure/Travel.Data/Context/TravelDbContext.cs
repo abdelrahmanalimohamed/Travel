@@ -11,6 +11,18 @@ namespace Travel.Data.Context
     public class TravelDbContext : DbContext
     {
 
+        public TravelDbContext()
+        {
+
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+
+            optionsBuilder.UseSqlite(@"Data Source=TravelTourDatabase.db");
+        }
+
         public TravelDbContext(DbContextOptions<TravelDbContext> options) : base(options)
         {
 
