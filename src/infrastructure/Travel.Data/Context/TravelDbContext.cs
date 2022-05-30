@@ -20,7 +20,7 @@ namespace Travel.Data.Context
         {
             base.OnConfiguring(optionsBuilder);
 
-            optionsBuilder.UseSqlite(@"Data Source=TravelTourDatabase.db");
+            optionsBuilder.UseSqlite(@"Data Source=TravelTourDatabase.db ");
         }
 
         public TravelDbContext(DbContextOptions<TravelDbContext> options) : base(options)
